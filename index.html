@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בינגו - משחק לילדים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 בינגו 🎉</h1>
+        <div class="bingo-board" id="bingoBoard"></div>
+        <button class="reset-button" id="resetButton" onclick="showResetModal()">
+            🔄 משחק חדש
+        </button>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <h2>?בטוח שרוצה משחק חדש</h2>
+            <div class="modal-buttons">
+                <button class="modal-button modal-button-yes" onclick="confirmReset()">
+                    ✓ כן
+                </button>
+                <button class="modal-button modal-button-no" onclick="closeModal()">
+                    ✗ לא
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
